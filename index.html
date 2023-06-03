@@ -5,8 +5,54 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <div class="main-wrapper">
+      <header class="main-header">
+        <nav class="header-navigation">
+          <a class="navigation-logo-link" href="#">
+            <img class="navigation-logo" width="140" height="70" src="/img/logo.svg" alt="Эмблема города Седона.">
+          </a>
+          <ul class="navigation-list navigation-right">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="navigation-list navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Поиск.</span>
+                <img class="icon-search" width="20" height="20" src="/img/search.svg" alt="Иконка для поиска.">
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Избранное.</span>
+                <img class="icon-favorites" src="/img/favorites.svg" alt="Избранное." width="20" height="20">
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link button" href="#">Хочу сюда</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main></main>
+      <footer></footer>
+    </div>
   </body>
 </html>
+
+<!--
+Нужен только HTML-код, стили делать не нужно.
+На этом этапе не нужно размечать содержимое всплывающих окон и выпадающих блоков.
+Также не нужно указывать пути и размеры для изображений. Достаточно разметки такого вида — <img src="#" alt="Описание картинки.">.
+Для скрытых элементов используйте класс class="visually-hidden".
+Если страница существует в макете, то на неё должна вести соответствующая ссылка, например, <a href="catalog.html">.
+Если страницы нет в макете, то ссылка на неё должна быть следующего вида — <a href="#"></a>.
+Для тестирования правильности работы форм можно использовать адрес https://echo.htmlacademy.ru/.
+    -->
