@@ -1,3 +1,17 @@
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .visually-hidden {
   position: absolute;
 
@@ -16,4 +30,17 @@
 
 .icon-favorites:before{
   content: url("img/favorites.svg");
+}
+
+.icon-button-counter{
+  position: relative;
+  top: -10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.icon-button-counter:before{
+  content: url("img/favorites-active.svg");
+  position: absolute;
+  z-index: -10;
 }
