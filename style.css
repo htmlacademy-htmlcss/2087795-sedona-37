@@ -70,3 +70,19 @@ ul{
 .souvenir-icon::before{
   content: url("img/souvenir-icon.svg");
 }
+
+.link-vk::before{
+  content: url("img/social-vkontakte.svg");
+}
+
+.link-t::before{
+  content: url("img/social-telegram.svg");
+}
+
+.link-youtube::before{
+  content: url("img/social-youtube.svg");
+}
+
+.footer-developer-link::before{
+  content: url("img/logo-htmlacademy.svg");
+}
