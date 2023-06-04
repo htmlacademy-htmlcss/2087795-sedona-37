@@ -78,6 +78,12 @@ ul{
   content: url("img/souvenir-icon.svg");
 }
 
+.subscribe{
+  min-height: 415px;
+  background-image: url("img/subscribe.jpg");
+  background-repeat: no-repeat;
+}
+
 .link-vk::before{
   content: url("img/social-vkontakte.svg");
 }
@@ -92,4 +98,14 @@ ul{
 
 .footer-developer-link::before{
   content: url("img/logo-htmlacademy.svg");
+}
+
+.breadcrumbs-link-hotels::before{
+  content: url("img/arrow-right.svg");
+}
+
+.inner-header{
+  min-height: 412px;
+  background-image: url("img/inner-header.jpg");
+  background-repeat: no-repeat;
 }
