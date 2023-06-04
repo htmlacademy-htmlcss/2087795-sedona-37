@@ -24,6 +24,13 @@ ul{
   overflow: hidden;
 }
 
+/*
+Декоративные изображения
+-фотографии Седоны
+-иконки
+-копирайт
+*/
+
 .icon-search:before {
   content: url("img/search.svg");
 }
