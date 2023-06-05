@@ -109,3 +109,15 @@ ul{
   background-image: url("img/inner-header.jpg");
   background-repeat: no-repeat;
 }
+
+.button-row::before{
+  content: url("img/button-row.svg");
+}
+
+.button-large::before{
+  content: url("img/button-large.svg");
+}
+
+.button-list::before{
+  content: url("img/button-list.svg");
+}
