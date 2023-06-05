@@ -1,0 +1,123 @@
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*
+Декоративные изображения
+-фотографии Седоны
+-иконки
+-копирайт
+*/
+
+.icon-search:before {
+  content: url("img/search.svg");
+}
+
+.icon-favorites:before{
+  content: url("img/favorites.svg");
+}
+
+.icon-button-counter{
+  position: relative;
+  top: -10px;
+  right: 10px;
+  z-index: 10;
+}
+
+.icon-button-counter:before{
+  content: url("img/favorites-active.svg");
+  position: absolute;
+  z-index: -10;
+}
+
+.main-promo{
+  min-height: 485px;
+  background-image: url("img/main-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.photo-1::before{
+  content: url("img/cedona-photo.jpg");
+}
+
+.photo-2::before{
+  content: url("img/canyon-photo.jpg");
+}
+
+.house-icon::before{
+  content: url("img/house-icon.svg");
+}
+
+.food-icon::before{
+  content: url("img/food-icon.svg");
+}
+
+.souvenir-icon::before{
+  content: url("img/souvenir-icon.svg");
+}
+
+.subscribe{
+  min-height: 415px;
+  background-image: url("img/subscribe.jpg");
+  background-repeat: no-repeat;
+}
+
+.link-vk::before{
+  content: url("img/social-vkontakte.svg");
+}
+
+.link-t::before{
+  content: url("img/social-telegram.svg");
+}
+
+.link-youtube::before{
+  content: url("img/social-youtube.svg");
+}
+
+.footer-developer-link::before{
+  content: url("img/logo-htmlacademy.svg");
+}
+
+.breadcrumbs-link-hotels::before{
+  content: url("img/arrow-right.svg");
+}
+
+.inner-header{
+  min-height: 412px;
+  background-image: url("img/inner-header.jpg");
+  background-repeat: no-repeat;
+}
+
+.button-row::before{
+  content: url("img/button-row.svg");
+}
+
+.button-large::before{
+  content: url("img/button-large.svg");
+}
+
+.button-list::before{
+  content: url("img/button-list.svg");
+}
