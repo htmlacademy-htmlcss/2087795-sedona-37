@@ -40,21 +40,16 @@ ul{
 }
 
 .icon-button-counter{
-  position: relative;
-  top: -10px;
-  right: 10px;
-  z-index: 10;
+
 }
 
 .icon-button-counter:before{
-  content: url("img/favorites-active.svg");
-  position: absolute;
-  z-index: -10;
+
 }
 
-.main-promo{
+.wrapper-hero{
   min-height: 485px;
-  background-image: url("img/main-background.jpg");
+  background-image: url("img/hero-background.jpg");
   background-repeat: no-repeat;
 }
 
@@ -85,15 +80,15 @@ ul{
 }
 
 .link-vk::before{
-  content: url("img/social-vkontakte.svg");
+
 }
 
 .link-t::before{
-  content: url("img/social-telegram.svg");
+
 }
 
 .link-youtube::before{
-  content: url("img/social-youtube.svg");
+  
 }
 
 .footer-developer-link::before{
