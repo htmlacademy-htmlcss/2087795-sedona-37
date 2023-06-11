@@ -1,0 +1,313 @@
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body{
+  margin: 0;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*
+Декоративные изображения
+-фотографии Седоны
+-иконки
+-копирайт
+*/
+
+.icon-search:before {
+  content: url("../img/search.svg");
+}
+
+.icon-favorites:before{
+  content: url("../img/favorites.svg");
+}
+
+/* Изображения Главный экран */
+
+.wrapper-hero{
+  min-height: 485px;
+  background-image: url("../img/hero-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.hero-img {
+  display: block;
+}
+
+/* --------------------------------- */
+
+.cedona-photo::before{
+  content: url("../img/cedona-photo.jpg");
+}
+
+.canyon-photo::before{
+  content: url("../img/canyon-photo.jpg");
+}
+
+.house-icon::before{
+  content: url("../img/house-icon.svg");
+}
+
+.food-icon::before{
+  content: url("../img/food-icon.svg");
+}
+
+.souvenir-icon::before{
+  content: url("../img/souvenir-icon.svg");
+}
+
+.subscribe{
+  min-height: 415px;
+  background-image: url("../img/subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  background-color: #82B3D3;
+  color: #FFFFFF;
+
+  text-align: center;
+}
+
+.footer-developer-link::before{
+  content: url("../img/logo-htmlacademy.svg");
+}
+
+.breadcrumbs-link-home::before{
+  content: url("../img/home-link.svg");
+}
+
+.breadcrumbs-link-hotels::before{
+  content: url("../img/arrow-right.svg");
+}
+
+.inner-header{
+  min-height: 412px;
+  background-image: url("../img/inner-header.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.button-row::before{
+  content: url("../img/button-row.svg");
+}
+
+.button-large::before{
+  content: url("../img/button-large.svg");
+}
+
+.button-list::before{
+  content: url("../img/button-list.svg");
+}
+
+
+/*Главная страница*/
+
+/*header*/
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #000000;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Блок под главным экраном */
+
+.wrapper-text{
+  text-align: center;
+}
+
+.text-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.text-description{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* main-advantages  блок с описанием преимуществ  */
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+/* subscribe Секция подписки */
+
+.text-title{
+  color: inherit;
+}
+
+/* page-footer */
+
+.footer-contacts-address {
+  font-style: normal;
+}
+
+.footer-contacts-address-phone-link {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* Каталог гостиниц */
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.catalog-filter-list {
+  line-height: 23px;
+}
+
+.catalog-hotel-title {
+  font-weight: 700;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+
+.product-card-rating-text {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* Кнопки */
+
+.button {
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.header-button {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #756157;
+}
+
+.search-button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #756157;
+
+  text-decoration: none;
+}
+
+.subscribe-button {
+  background-color: #82B3D3;
+  border: none;
+}
+
+.filter-submit-button {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #82B3D3;
+  border: none;
+}
+
+.filter-reset-button {
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+}
+
+.product-card-button-details {
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.product-card-button-favorites {
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+
+  background-color: #82B3D3;
+
+  text-decoration: none;
+}
