@@ -2,15 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Главная</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Главная страница / Седона</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon.png">
   </head>
   <body>
     <div class="page-wrapper">
       <header class="page-header">
         <nav class="navigation">
-          <a class="navigation-logo-link" href="#">
-            <img class="navigation-logo" width="140" height="70" src="/img/logo.svg"
+          <a class="navigation-link navigation-logo-link" href="#">
+            <img class="navigation-logo" width="140" height="70" src="img/logo.svg"
             alt="Эмблема города Седона.">
           </a>
           <ul class="navigation-list navigation-right">
@@ -37,17 +38,17 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link button" href="#">Хочу сюда</a>
+              <a class="navigation-link header-button button" href="#">Хочу сюда</a>
             </li>
           </ul>
         </nav>
       </header>
       <main class="main-index">
-        <h1 class="visually-hidden">Туристический город Седона</h1>
+        <h1 class="visually-hidden">Туристический город Седона.</h1>
         <section class="main-hero">
           <div class="wrapper-hero">
             <h2 class="visually-hidden">Седона круче, чем Гранд-Каньон!</h2>
-          <img class="hero-img" width="1200" height="485" src="img/hero-img.svg" alt="Добро пожаловать в Седону.">
+            <img class="hero-img" width="458" height="352" src="img/hero-img.svg" alt="Добро пожаловать в Седону.">
           </div>
           <div class="wrapper-text">
             <p class="text-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -55,14 +56,14 @@
           </div>
         </section>
         <section class="main-advantages">
-          <h2 class="visually-hidden">Преимущества Седоны</h2>
+          <h2 class="visually-hidden">Преимущества Седоны.</h2>
           <ul class="advantages-list">
             <li class="advantage-item">
               <div class="advantages-description">
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <div class="advantages-photo photo-1">
+              <div class="advantages-photo cedona-photo">
                 <span class="visually-hidden">Фотография города.</span>
               </div>
             </li>
@@ -89,7 +90,7 @@
                 <h3 class="advantages-title">Там есть мост дьявола</h3>
                 <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <div class="advantages-photo photo-2">
+              <div class="advantages-photo canyon-photo">
                 <span class="visually-hidden">Фотография каньона.</span>
               </div>
             </li>
@@ -114,7 +115,7 @@
                 <p class="advantages-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </div>
               <div class="advantages-photo food-icon">
-                <span class="visually-hidden">Иконка бургера.</span>
+                <span class="visually-hidden">Иконка бургер.</span>
               </div>
             </li>
             <li class="advantage-item">
@@ -123,15 +124,15 @@
                 <p class="advantages-text">Не только китайского, но и настоящего местного производства!</p>
               </div>
               <div class="advantages-photo souvenir-icon">
-                <span class="visually-hidden">Иконка сувенира.</span>
+                <span class="visually-hidden">Иконка сувенир.</span>
               </div>
             </li>
             <li class="advantage-item">
               <div class="wrapper-text">
-                <h3 class="visually-hidden">Поиск гостиниц</h3>
+                <h3 class="visually-hidden">Поиск гостиниц.</h3>
                 <p class="text-title">Заинтересовались?</p>
                 <p class="text-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                <a class="search-link button" href="catalog.html" >Поиск гостиницы в Седоне</a>
+                <a class="search-link search-button button" href="catalog.html" >Поиск гостиницы в Седоне</a>
               </div>
             </li>
           </ul>
@@ -142,7 +143,7 @@
           <p class="text-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="subscribe-email">
-              <span class="visually-hidden">Ваш email</span>
+              <span class="visually-hidden">Ваш email.</span>
               <input type="email" name="email" placeholder="Ваш e-mail">
             </label>
             <button class="button subscribe-button" type="submit">Подписаться</button>
@@ -197,13 +198,3 @@
     </div>
   </body>
 </html>
-
-<!--
-Нужен только HTML-код, стили делать не нужно.
-На этом этапе не нужно размечать содержимое всплывающих окон и выпадающих блоков.
-Также не нужно указывать пути и размеры для изображений. Достаточно разметки такого вида — <img src="#" alt="Описание картинки.">.
-Для скрытых элементов используйте класс class="visually-hidden".
-Если страница существует в макете, то на неё должна вести соответствующая ссылка, например, <a href="catalog.html">.
-Если страницы нет в макете, то ссылка на неё должна быть следующего вида — <a href="#"></a>.
-Для тестирования правильности работы форм можно использовать адрес https://echo.htmlacademy.ru/.
-    -->
