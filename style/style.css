@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
 
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-style: normal;
   font-weight: 700;
 
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -72,11 +72,11 @@ body{
 
 /* --------------------------------- */
 
-.photo-1::before{
+.cedona-photo::before{
   content: url("../img/cedona-photo.jpg");
 }
 
-.photo-2::before{
+.canyon-photo::before{
   content: url("../img/canyon-photo.jpg");
 }
 
