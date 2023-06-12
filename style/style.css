@@ -16,8 +16,13 @@
   font-display: swap;
 }
 
+html {
+  /* height: 100%; */
+}
+
 body{
   margin: 0;
+  height: 100%;
 
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -144,13 +149,45 @@ body{
 .page-wrapper {
   margin: 0 auto;
   max-width: 1200px;
+  display: flex;
+  flex-direction: column;
 
   background-color: #FFFFFF;
 
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 /*header*/
+
+.navigation {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 0 70px;
+  margin: 0 auto;
+}
+
+.navigation-logo-link {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-right {
+  margin-right: auto;
+}
+
+.navigation-user {
+
+}
 
 .navigation-link {
   font-weight: 700;
@@ -166,8 +203,9 @@ body{
 /* Главный экран */
 
 .hero-img {
+  display: block;
   margin: 0 auto;
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 /* Блок под главным экраном */
@@ -201,6 +239,12 @@ body{
   text-transform: uppercase;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* subscribe Секция подписки */
 
 
@@ -209,6 +253,17 @@ body{
 }
 
 /* page-footer */
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
+.footer-social-list {
+  display: flex;
+  list-style: none;
+}
 
 .footer-contacts-address {
   font-style: normal;
@@ -223,6 +278,10 @@ body{
 
 /* Каталог гостиниц */
 
+.inner-header-container {
+  padding: 0 70px;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -230,14 +289,49 @@ body{
   color: inherit;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-group {
+  width: 151px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.catalog-filter-group:not(:last-child) {
+  margin-right: 70px;
+}
+
+.catalog-filter-price {
+  width: 288px;
+  margin: 0 70px 0 0;
+  padding: 0;
+  border: none;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-list {
   line-height: 23px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-hotel {
+  padding: 0 70px;
+}
+
+.catalog-hotel-sorting {
+  display: flex;
 }
 
 .catalog-hotel-title {
@@ -249,6 +343,24 @@ body{
 .select-control {
   font-size: 18px;
   line-height: 21px;
+}
+
+.sorting-list {
+  display: flex;
+  list-style: none;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-card {
+  border: solid 1px #E6E6E6;
+  padding: 20px;
 }
 
 .product-card-link {
