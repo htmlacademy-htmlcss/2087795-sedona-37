@@ -89,6 +89,32 @@ body{
   color: #FFFFFF;
 }
 
+/* Изображения advantages */
+
+.advantages-house-icon {
+  width: 75px;
+  height: 70px;
+  background-image: url("../img/house-icon.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.advantages-food-icon {
+  width: 75px;
+  height: 70px;
+  background-image: url("../img/food-icon.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.advantages-souvenir-icon {
+  width: 65px;
+  height: 76px;
+  background-image: url("../img/souvenir-icon.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
 /* Каталог */
 
 .inner-header{
@@ -100,28 +126,6 @@ body{
   background-color: #82B3D3;
   color: #FFFFFF;
 }
-
-/*
-.breadcrumbs-link-home::before{
-  content: url("../img/home-link.svg");
-}
-
-.breadcrumbs-link-hotels::before{
-  content: url("../img/arrow-right.svg");
-} */
-
-.button-row::before{
-  content: url("../img/button-row.svg");
-}
-
-.button-large::before{
-  content: url("../img/button-large.svg");
-}
-
-.button-list::before{
-  content: url("../img/button-list.svg");
-}
-
 
 /*Главная страница*/
 
@@ -160,6 +164,7 @@ body{
 
 .navigation-link {
   display: block;
+  position: relative;
   padding: 20px 16px;
 
   font-weight: 700;
@@ -170,6 +175,20 @@ body{
 
   text-align: center;
   text-decoration: none;
+}
+
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link-current::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -1px;
+  left: 16px;
+  right: 16px;
+  background-color: #756257;
 }
 
 .icon-search {
@@ -209,11 +228,10 @@ body{
 .hero-img {
   display: block;
   margin: 0 auto;
-  vertical-align: middle;
   padding-top: 51px;
 }
 
-/* Блок под главным экраном */
+/* main-advantages  блок с описанием преимуществ  */
 
 .wrapper-text{
   margin: 0 auto;
@@ -268,9 +286,6 @@ body{
   margin-bottom: 64px;
 }
 
-/* main-advantages  блок с описанием преимуществ  */
-
-
 .advantages-list {
   max-width: 1200px;
   display: grid;
@@ -304,29 +319,6 @@ body{
   padding-bottom: 81px;
 }
 
-.advantages-house-icon {
-  width: 75px;
-  height: 70px;
-  background-image: url("../img/house-icon.svg");
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-
-.advantages-food-icon {
-  width: 75px;
-  height: 70px;
-  background-image: url("../img/food-icon.svg");
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-
-.advantages-souvenir-icon {
-  width: 65px;
-  height: 76px;
-  background-image: url("../img/souvenir-icon.svg");
-  background-size: auto;
-  background-repeat: no-repeat;
-}
 
 .advantages-title {
   font-weight: 700;
@@ -335,6 +327,29 @@ body{
   margin: 0;
   text-transform: uppercase;
   text-align: center;
+}
+
+.advantages-title__line::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 30px auto;
+}
+
+.advantages-title__line-black::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 30px auto;
+}
+
+.advantages-title__icon {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .advantages-text {
@@ -351,9 +366,6 @@ body{
 }
 
 .first-row__first-cell {
-  /* grid-column: 1 / 2;
-  grid-row: 1 / 2; */
-
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -469,10 +481,20 @@ body{
 
 .footer-social-link {
   display: flex;
+  width: 47px;
+  height: 40px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   margin: 0;
+}
+
+.footer-social-link > svg:hover {
+  fill: #68A2CA;
+}
+
+.footer-social-link > svg:active {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts-address {
@@ -486,6 +508,14 @@ body{
   color: #000000;
 }
 
+.footer-contacts-address-phone-link:hover {
+  color: #756157;
+}
+
+.footer-contacts-address-phone-link:active {
+  color: #7561574D;
+}
+
 .footer-developer {
   display: flex;
   justify-content: center;
@@ -493,12 +523,20 @@ body{
 }
 
 .footer-developer-link {
-  display: flex;
   width: 115px;
   height: 33px;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-size: auto;
-  background-repeat: no-repeat;
+  display: block;
+  mask: url("../img/logo-htmlacademy.svg") no-repeat center;
+  -webkit-mask: url("../img/logo-htmlacademy.svg") no-repeat center;
+  background-color: #000000;
+}
+
+.footer-developer-link:hover {
+  background-color: #756157;
+}
+
+.footer-developer-link:active {
+  background-color: #7561574D;
 }
 
 
@@ -521,10 +559,27 @@ body{
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
   margin-bottom: 40px;
+}
+
+.breadcrumbs-item-home {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 29px;
+  top: 2px;
+}
+
+.breadcrumbs-item-home::after {
+  align-items: center;
+  position: absolute;
+  content: url("../img/arrow-right.svg");
+  left: 24px;
+  top: -2px;
 }
 
 .breadcrumbs-link {
@@ -574,6 +629,63 @@ body{
 
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control-input[type="checkbox"] {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.control-input[type="checkbox"]:checked {
+  background-image: url("/img/tick.svg");
+  background-repeat: no-repeat;
+  background-position:  center top 6px;
+  background-size: 13px 10px;
+}
+
+.control-input[type="checkbox"]:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input[type="checkbox"]:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="radio"] {
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.control-input[type="radio"]:checked {
+  background-image: url("/img/tick-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 13px 10px;
+}
+
+.control-input[type="radio"]:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input[type="radio"]:active {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-buttons {
@@ -631,22 +743,22 @@ body{
   padding: 0;
 }
 
-.sorting-itam {
+.card-grid-toggle {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 48px;
   height: 48px;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+  justify-content: center;
+  align-items: center;
 }
 
-.active {
+.card-grid-toggle:hover {
   border: 2px solid #000000;
 }
 
-.button-row, .button-large, .button-list {
-  padding: 17px 16px;
+.card-grid-toggle-current {
+  border: 2px solid #000000;
 }
 
 .product-list {
@@ -729,14 +841,35 @@ body{
   color: #FFFFFF;
   background-color: #82B3D3;
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
-.pagination-current {
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.pagination-link:disabled {
+  background-color: #E5E5E5;
+}
+
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:active,
+.pagination-current:disabled {
   background-color: #F2F2F2;
   color: #000000;
 }
 
-.pagination-current-dot {
+.pagination-current-dot,
+.pagination-current-dot:hover,
+.pagination-current-dot:active,
+.pagination-current-dot:disabled {
   background-color: #FFFFFF;
   color: #000000;
 }
@@ -758,6 +891,8 @@ body{
   color: #FFFFFF;
 
   border-radius: 4px;
+
+  cursor: pointer;
 }
 
 .header-button {
@@ -766,10 +901,36 @@ body{
   margin-bottom: 14px;
 }
 
+.header-button:hover {
+  background-color: #615048;
+}
+
+.header-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.header-button:disabled {
+  background-color: #E5E5E5;
+}
+
 .search-button {
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
+}
+
+.search-button:hover {
+  background-color: #615048;
+}
+
+.search-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.search-button:disabled {
+  background-color: #E5E5E5;
 }
 
 .subscribe-button {
@@ -784,9 +945,22 @@ body{
 
   background-color: #82B3D3;
   padding: 8px 50px;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
   border: none;
   margin: 0;
+}
+
+.subscribe-button:hover {
+  background-color: #68A2CA;
+}
+
+.subscribe-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.subscribe-button:disabled {
+  background-color: #E5E5E5;
 }
 
 .input-email {
@@ -804,7 +978,7 @@ body{
   color: rgba(0, 0, 0, 0.6);
 
   background-color: #F2F2F2;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   border: none;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -819,13 +993,47 @@ body{
   margin-bottom: 32px;
 }
 
+.filter-submit-button:hover {
+  background-color: #68A2CA;
+}
+
+.filter-submit-button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.30);
+}
+
 .filter-reset-button {
   background-color: rgba(130, 178, 211, 0);
   border: none;
 }
 
+.filter-reset-button:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-reset-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-reset-button:disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .card-button-brown {
   align-self: start;
+}
+
+.card-button-brown:hover {
+  background-color: #615048;
+}
+
+.card-button-brown:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.card-button-brown:disabled {
+  background-color: #E5E5E5;
 }
 
 .card-button-blue {
@@ -833,6 +1041,32 @@ body{
   align-self: start;
 }
 
+.card-button-blue:hover {
+  background-color: #68A2CA;
+}
+
+.card-button-blue:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.card-button-blue:disabled {
+  background-color: #E5E5E5;
+}
+
 .card-button-active {
   background-color: #7DB54F;
+}
+
+.card-button-active:hover {
+  background-color: #6C9E42;
+}
+
+.card-button-active:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.card-button-active:disabled {
+  background-color: #E5E5E5;
 }
