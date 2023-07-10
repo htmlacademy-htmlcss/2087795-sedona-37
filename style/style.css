@@ -648,7 +648,7 @@ body{
 }
 
 .control-input[type="checkbox"]:checked {
-  background-image: url("/img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position:  center top 6px;
   background-size: 13px 10px;
@@ -674,7 +674,7 @@ body{
 }
 
 .control-input[type="radio"]:checked {
-  background-image: url("/img/tick-circle.svg");
+  background-image: url("../img/tick-circle.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 13px 10px;
