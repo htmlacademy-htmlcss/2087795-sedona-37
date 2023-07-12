@@ -5,12 +5,13 @@
   <title>Выбор гостиниц / Седона</title>
   <link rel="stylesheet" href="style/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon.png">
+  <link rel="icon" href="./favicon.ico">
 </head>
 <body>
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="page-navigation">
-        <a class="navigation-logo-link" href="index.html">
+        <a class="navigation-logo-link" href="#">
           <img class="navigation-logo" width="140" height="70" src="img/logo.svg"
           alt="Эмблема города Седона.">
         </a>
@@ -23,19 +24,19 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list-user">
           <li class="navigation-item">
-            <a class="navigation-link icon-search" href="#">
+            <a class="icon-search" href="#">
               <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link icon-favorites" href="#">
+            <a class="icon-favorites" href="#">
               <span class="visually-hidden">Избранное.</span>
-              <span class="icon-button-counter">12</span>
+              <span class="icon-favorites-counter">12</span>
             </a>
           </li>
           <li class="navigation-item navigation-item-button">
@@ -49,17 +50,17 @@
         <div class="inner-header-container">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
-            <li class="breadcrumbs-item-home">
-              <a class="breadcrumbs-link-home" href="index.html">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">
                 <span class="visually-hidden">Главная</span>
-                <svg aria-hidden="true" focusable="false" width="13" height="15" viewBox="0 0 13 15" fill="none"   xmlns="http://www.w3.org/2000/svg">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.5 0.499973L0.5 6.30003V12.5H12.5V6.30003L6.5 0.499973ZM11.5 11.5H1.5V6.70003L6.5 1.89997L11.5 6.70003V11.5Z" fill="white"/>
                   <path d="M4.5 10.5H5.5V8.00003H7.5V10.5H8.5V7.00003H4.5V10.5Z" fill="white"/>
                 </svg>
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link" href="#">Гостиницы</a>
             </li>
           </ul>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -109,31 +110,45 @@
                 </li>
               </ul>
             </fieldset>
+
+
             <fieldset class="catalog-filter-price">
+
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+
               <div class="range">
+
                 <div class="range-fields">
                   <label class="range-field">
+                    <input class="range-input range-input__left" type="number" name="price-from" value="0" min="0" max="10000" step="100" placeholder="0">
                     <span class="range-title">от</span>
-                    <input class="range-input" type="number" name="price-from" value="0" min="0" max="10000" step="100" placeholder="0">
                   </label>
                   <label class="range-field">
+                    <input class="range-input range-input__right" type="number" name="price-to" value="9000" min="0" max="10000" step="100" placeholder="10000">
                     <span class="range-title">до</span>
-                    <input class="range-input" type="number" name="price-to" value="9000" min="0" max="10000" step="100" placeholder="10000">
                   </label>
                 </div>
-                <div class="range-slider slider">
-                  <div class="slider-bar" style="margin-right: 50px;">
-                    <button class="slider-thumb" type="button">
+
+                <div class="range-scale">
+
+                  <div class="range-bar"
+                    style="left: 0;
+                          width: 226px;">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Минимальная цена</span>
                     </button>
-                    <button class="slider-thumb" type="button">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Максимальная цена</span>
                     </button>
                   </div>
+
                 </div>
+
               </div>
+
             </fieldset>
+
+
             <div class="filter-buttons">
               <button class="filter-submit-button button" type="submit">Применить</button>
               <button class="filter-reset-button button" type="reset">Сбросить</button>
@@ -148,9 +163,9 @@
             <span class="catalog-hotel-result">38</span>
           </p>
           <select class="select-control" aria-label="Сортировка">
-            <option value="popular">Сначала дешёвое</option>
-            <option value="cheap">Сначала популярное</option>
-            <option value="expensive">Сначала дорогое</option>
+            <option value="popular">Сначала дешёвые</option>
+            <option value="cheap">Сначала популярные</option>
+            <option value="expensive">Сначала дорогие</option>
           </select>
           <ul class="sorting-list">
             <li class="sorting-itam active">
