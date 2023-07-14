@@ -564,13 +564,10 @@ body{
 .modal {
   position: relative;
   margin: auto;
+  width: 577px;
   padding: 64px 70px;
   background-color:#FFFFFF;
   border-radius: 30px;
-}
-
-.modal-auth {
-  width: 577px;
 }
 
 .modal-close-button {
@@ -598,6 +595,192 @@ body{
   padding-bottom: 64px;
 }
 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-date {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.label-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-right: 10px;
+}
+
+.label-title__column {
+  width: 127px;
+  word-break: break-all;
+}
+
+.label-title__column-kids {
+  display: flex;
+  justify-content: flex-end;
+  width: 97px;
+  padding-left: 40px;
+  word-break: break-word;
+}
+
+.input-date {
+  background-image: url("../img/calendar-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  margin-bottom: 4px;
+}
+
+.input-date[placeholder] {
+  width: 400px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.label-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 24px;
+  padding-left: 157px;
+}
+
+.error-text {
+  color: #FF5757;
+}
+
+.valid-text {
+  color: #333333;
+}
+
+.wrapper-persons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+
+.label-number {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.label-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.wrapper-input-number {
+  width: 110px;
+  position: relative;
+}
+
+.input-number {
+  width: 90px;
+  padding: 14px 10px;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+
+}
+
+/* .button-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+
+  cursor: pointer;
+  padding: 2px;
+  border: 2px solid rgba(131, 179, 211, 0);
+  border-radius: 4px;
+} */
+
+.button-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+
+  cursor: pointer;
+  padding: 2px;
+  border: 2px solid rgba(131, 179, 211, 0);
+  border-radius: 4px;
+
+  position: absolute;
+  left: 4px;
+  transform: translateY(40%);
+}
+
+.button-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 2px;
+
+  cursor: pointer;
+  padding: 2px;
+  border: 2px solid rgba(131, 179, 211, 0);
+  border-radius: 4px;
+
+  position: absolute;
+  right: 4px;
+  transform: translateY(-160%);
+}
+
+.img-down, .img-plus {
+  fill: rgba(117, 97, 87, 0.3);
+  padding: 7px 1px;
+}
+
+.img-down:hover{
+  fill: #000000;
+}
+
+.button-down:active {
+  border: 2px solid rgb(131, 179, 211);
+}
+
+
 .button-result {
   display: flex;
   justify-content: center;
@@ -617,6 +800,55 @@ body{
 
   padding: 18px 77px;
   margin: 0;
+}
+
+/* Тултип */
+
+.tooltip {
+  position: relative;
+  margin-right: 46px;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 216px;
+  padding: 15px 18px 18px 22px;
+  background-color: #333333;
+  border-radius: 10px;
+
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #FFFFFF;
+
+  display: none;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #333333;
+
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 /* Каталог гостиниц */
