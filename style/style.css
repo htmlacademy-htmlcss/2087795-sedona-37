@@ -1286,7 +1286,7 @@ body{
   border: 1px solid #E6E6E6;
 }
 
-.product-card-image {
+.img-link {
   grid-column: 2 span;
 }
 
