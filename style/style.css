@@ -476,7 +476,7 @@ body{
 .subscribe-form {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .wrapper-text__subscribe {
@@ -1035,10 +1035,12 @@ body{
 }
 
 .control-input[type="radio"]:checked {
+  padding: 10px;
+
   background-image: url("../img/tick-circle.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 13px 10px;
+  background-size: 10px 10px;
 }
 
 .control-input[type="radio"]:hover {
@@ -1308,7 +1310,7 @@ body{
 }
 
 .product-card-rating {
-  align-self: center;
+  align-self: start;
 }
 
 .product-card-rating-text {
@@ -1404,6 +1406,7 @@ body{
 }
 
 .header-button {
+  max-width: 92px;
   padding: 8px 34px;
   margin-top: 14px;
   margin-bottom: 14px;
