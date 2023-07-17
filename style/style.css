@@ -77,12 +77,12 @@ body{
 .main-hero-img {
   min-height: 485px;
 
+  background-color: #82B3D3;
   background-image: url("../img/hero-background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  background-color: #82B3D3;
   color: #FFFFFF;
 }
 
@@ -120,11 +120,12 @@ body{
 .inner-header {
   min-height: 412px;
 
-  background-image: url("../img/inner-header.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-
   background-color: #82B3D3;
+  background-image: url("../img/inner-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   color: #FFFFFF;
 }
 
@@ -486,12 +487,13 @@ body{
 
 .subscribe-background {
   min-height: 415px;
+
+  background-color: #82B3D3;
   background-image: url("../img/subscribe.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  background-color: #82B3D3;
   color: #FFFFFF;
 }
 
@@ -552,6 +554,10 @@ body{
   color: #756157;
 }
 
+.footer-contacts-address-phone-link:focus {
+  color: #756157;
+}
+
 .footer-contacts-address-phone-link:active {
   color: #7561574D;
 }
@@ -572,6 +578,10 @@ body{
 }
 
 .footer-developer-link:hover {
+  background-color: #756157;
+}
+
+.footer-developer-link:focus {
   background-color: #756157;
 }
 
@@ -1170,9 +1180,9 @@ body{
 
 .filter-buttons {
   width: 190px;
+  padding-top: 54px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: stretch;
 }
 
@@ -1406,7 +1416,7 @@ body{
 }
 
 .header-button {
-  max-width: 92px;
+  width: 92px;
   padding: 8px 34px;
   margin-top: 14px;
   margin-bottom: 14px;
